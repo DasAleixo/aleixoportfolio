@@ -206,7 +206,25 @@ section {
 .content-img img {
     max-width: 480px;
     width: 100%;
+    animation: bobbingAnim 4s infinite;
 }
+
+@keyframes bobbingAnim {
+    0% {
+        transform: translate(0px, 0px);
+        animation-timing-function:ease-in-out
+    }
+ 
+    50% {
+        transform: translate(0px, -48px);
+        animation-timing-function:ease-in-out
+    }
+ 
+    100% {
+        transform: translate(0px, 0px);
+        animation-timing-function:ease-in-out
+    }
+ }
 
 .title {
     font-size: 5rem;
