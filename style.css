@@ -354,7 +354,6 @@ p {
 
 .certificates .retangle {
    display: flex;
-   flex: 1;
    background-color: var(--primary-color);
    border-radius: 1rem;
    color: var(--white-color);
@@ -444,8 +443,8 @@ p {
     }
 
     .certificates .retangle{
-        max-width: 300px;
-        min-height: 200px;
+        width: 300px;
+        height: 200px;
     }
 
     .certificates .retangle img{
