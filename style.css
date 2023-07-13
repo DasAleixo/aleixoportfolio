@@ -334,25 +334,22 @@ p {
 .certificates {
     display: flex;
     flex-wrap: wrap;
-    padding: 2rem;
-    justify-content: center;
-    align-items: center;
     background-image: url('imagens/endless-constellation.svg');
+    justify-content: center;
 }
 
 .certificates ul{
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 .certificates li{
     display: flex;
     padding: 2rem;
-    max-width: 600px;
-    width: 100%;
+    max-width: 500px;
     min-height: 256px;
 }
 
@@ -362,14 +359,14 @@ p {
    background-color: var(--primary-color);
    border-radius: 1rem;
    color: var(--white-color);
-   justify-content: center;
+   justify-content: space-around;
    align-items: center;
 }
 
 .certificates .retangle img{
-    height: 150px;
+    height: 160px;
     width: 180px;
-    border-radius: 15%;
+    border-radius: 20%;
     transition: all 250ms ease-in-out;
     padding: 2rem;
     align-items: center;
@@ -379,6 +376,8 @@ p {
     text-align: left;
     flex: 1;
     padding: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .certificates .retangle p{
@@ -386,6 +385,8 @@ p {
     font-size: 2rem;
     padding: 1rem;
     flex: 1;
+    justify-content: center;
+    align-items: center;
 }
 
 .certificates .retangle .colunas{
@@ -436,7 +437,7 @@ p {
     }
 
     .menu ul li a {
-        font-size: 1rem;
+        font-size: 1.5rem;
         padding: 1.2rem;
     }
 }
