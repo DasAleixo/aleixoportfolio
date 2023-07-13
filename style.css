@@ -245,7 +245,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .about .content{
@@ -336,6 +336,7 @@ p {
     flex-wrap: wrap;
     background-image: url('imagens/endless-constellation.svg');
     justify-content: center;
+    overflow-x: hidden;
 }
 
 .certificates ul{
@@ -349,8 +350,6 @@ p {
 .certificates li{
     display: flex;
     padding: 2rem;
-    max-width: 500px;
-    min-height: 256px;
 }
 
 .certificates .retangle {
@@ -361,6 +360,9 @@ p {
    color: var(--white-color);
    justify-content: space-around;
    align-items: center;
+   overflow-x: hidden;
+   max-width: 500px;
+   min-height: 256px;
 }
 
 .certificates .retangle img{
@@ -439,6 +441,24 @@ p {
     .menu ul li a {
         font-size: 1.5rem;
         padding: 1.2rem;
+    }
+
+    .certificates .retangle{
+        max-width: 300px;
+        min-height: 200px;
+    }
+
+    .certificates .retangle img{
+        height: 120px;
+        width: 140px; 
+    }
+
+    .certificates .retangle h6{
+        font-size: 1.5rem;
+    }
+    
+    .certificates .retangle p{
+        font-size: 1.5rem;
     }
 }
 
