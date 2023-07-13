@@ -67,10 +67,6 @@ p {
     font-size: 2.1rem;
 }
 
-section {
-    min-height: 75vh;
-}
-
 /* Classe */
 .margin {
     display: absolute;
@@ -304,7 +300,6 @@ section {
 }
 
 .galeria {
-    display: flex;
     padding: 2rem;
     background-color: var(--primary-color);
     align-items: center;
@@ -317,13 +312,16 @@ section {
     flex-direction: row;
     flex-wrap: wrap;
     list-style: none;
-    align-items: center;
+}
+
+.galeria .imagens li {
     justify-content: center;
+    align-items: center;
 }
 
 .galeria img {
     max-width: 512px;
-    width: 90%;
+    width: 100%;
     padding: 3rem;
     transition: all 250ms ease-in-out;
 }
@@ -359,6 +357,7 @@ section {
 }
 
 .certificates .retangle {
+   display: flex;
    flex: 1;
    padding: 2rem;
    background-color: var(--primary-color);
@@ -374,6 +373,7 @@ section {
     border-radius: 15%;
     transition: all 250ms ease-in-out;
     padding: 2rem;
+    align-items: center;
 }
 
 .certificates .retangle h6{
@@ -404,6 +404,36 @@ section {
 @media screen and (max-width: 750px) {
     .skills, .galeria{
         flex-direction: column;
+    }
+
+    .about {
+        padding: 3rem;
+    }
+
+
+    .galeria img:hover{
+        transform: scale(1);
+        translate:calc(0px);
+    }
+
+    .icons img:hover{
+        transform: scale(1);
+    }
+
+    .certificates .retangle img:hover{
+        transform: scale(1.0);
+    }
+
+    .menu-content {
+        flex-direction: column;
+    }
+
+    .menu-content img {
+        justify-content: center;
+    }
+
+    .menu img:hover{
+        transform: scale(1.0);
     }
 }
 
